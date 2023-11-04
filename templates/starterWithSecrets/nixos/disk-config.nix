@@ -3,9 +3,9 @@
 # Other examples found here: https://github.com/nix-community/disko/tree/master/example
   disko.devices = {
     disk = {
-      vdb = {
+      vda = {
         # device = "/dev/disk/by-id/some-disk-id";
-        device = "/dev/nvme0n1";
+        device = "/dev/vda";
         type = "disk";
         content = {
           type = "gpt";
