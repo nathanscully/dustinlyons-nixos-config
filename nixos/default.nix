@@ -280,6 +280,8 @@ let user = "dustin";
     startupTimeout = "7min"; # dustinlyons/nixpkgs
   };
 
+  services.qemuGuest.enable = true;
+
   fonts.packages = with pkgs; [
     dejavu_fonts
     emacs-all-the-icons-fonts
